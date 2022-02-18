@@ -6,10 +6,19 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+3.times do |topic|
+  Topic.create!(
+    title: "Topic #{topic}"
+  )
+end
+
+puts "3 topics created"
+
 10.times do |blog|
   Blog.create!( 
     title: "My blog post #{blog}",
-    body: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+    body: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    topic_id: Topic.last.id
   )
 end
 
@@ -24,14 +33,24 @@ end
 
 puts "5 skills created"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
   Portfolio.create!( 
     title:"Portfolio Title #{portfolio_item}",
-    subtitle: "My Great Service",
+    subtitle: "Ruby On Rails",
     body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     main_image: "http://placehold.it/600x400",
     thunmb_image: "http://placehold.it/350x200"
   )
 end
 
-puts "9 portfolio created"
+2.times do |portfolio_item|
+  Portfolio.create!( 
+    title:"Portfolio Title #{portfolio_item}",
+    subtitle: "Angular",
+    body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    main_image: "http://placehold.it/600x400",
+    thunmb_image: "http://placehold.it/350x200"
+  )
+end
+
+puts "10 portfolio created"
