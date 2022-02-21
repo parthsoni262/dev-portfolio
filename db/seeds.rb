@@ -39,7 +39,7 @@ puts "5 skills created"
     subtitle: "Ruby On Rails",
     body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     main_image: "http://placehold.it/600x400",
-    thunmb_image: "http://placehold.it/350x200"
+    thunmb_image: "http://placehold.it/300x200"
   )
 end
 
