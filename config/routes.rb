@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :portfolios, except: [:show]
 
   get 'angular-items', to: 'portfolios#angular'
@@ -11,9 +12,7 @@ Rails.application.routes.draw do
     member do
       get :toggle_status
     end
-  end 
-
-
-  
+  end
+    
   root to: 'pages#home'
 end
