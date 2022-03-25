@@ -32,6 +32,12 @@ class PortfoliosController < ApplicationController
 
   def update
     @portfolio_item = Portfolio.find(params[:id])
+
+    #Temporary solution for update techonlogy
+    # @delete_technologies = Technology.where(portfolio_id: params[:id])
+    # @delete_technologies.destroy_all
+    # render json: @delete_technologies
+    # return
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: "Portfolio was successfully updated." }
