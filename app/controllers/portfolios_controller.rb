@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
   layout "portfolio"
 
   def index
@@ -27,12 +28,9 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
-    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def update
-    @portfolio_item = Portfolio.find(params[:id])
-
     #Temporary solution for update techonlogy
     # @delete_technologies = Technology.where(portfolio_id: params[:id])
     # @delete_technologies.destroy_all
@@ -48,11 +46,9 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def destroy
-    @portfolio_item = Portfolio.find(params[:id])
     @portfolio_item.destroy
 
     respond_to do |format|
@@ -67,5 +63,9 @@ class PortfoliosController < ApplicationController
                                         :body,
                                         technologies_attributes: [:name]
                                       )
+    end
+
+    def set_portfolio_item
+      @portfolio_item = Portfolio.find(params[:id])
     end
 end
