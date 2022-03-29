@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "greeting")
     end
   end
+
+  def copyright_generator
+    DevViewTool::Renderer.copyright "Parth Soni", "All Rights Resvered"
+  end
 end
