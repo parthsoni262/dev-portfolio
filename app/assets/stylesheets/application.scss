@@ -41,8 +41,8 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
-  align-items: center !important
+  max-width: 65em;
+  // align-items: center !important;
 }
 
 
@@ -88,10 +88,10 @@ body {
   }
 }
 
-.float-md-start {
-  margin-right: 65px;
+// .float-md-start {
+//   margin-right: 25rem;
 
-}
+// }
 
 /*
  * Cover
@@ -110,4 +110,8 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+.mt-auto {
+  margin-left: 23.5rem;
 }
