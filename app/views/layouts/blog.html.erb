@@ -13,18 +13,9 @@
   </head>
 
   <body>
-    <header class="blog-header py-3">
-      <div class="row flex-nowrap justify-content-start align-items-center">
-        <div class="col-6 d-flex justify-content-start ml-0 auto">
-          <h2>My Blog</h2>
-        </div>
-        <div class="col-6 d-flex justify-content-end ">
-          <%= login_helper 'nav-link' %>
-        </div>
-      </div>
-    </header>
+    <%= render "shared/blog_header" %>
 
-    <%= render "shared/blog_nav"%>
+    <%= render "shared/blog_nav" %>
 
     <div class="container">
       <div class="row">
@@ -36,14 +27,8 @@
         <%= source_helper("blog") %>
 
       </div>
-      <!-- Footer Start-->
-        <footer class="blog-footer">
-          <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
-      <!-- Footer End-->
+
+      <%= render "shared/blog_footer" %>
     </div>    
   </body>
 </html>
