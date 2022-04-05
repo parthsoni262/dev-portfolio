@@ -136,3 +136,29 @@ body {
 .col-md-2 {
   margin-top: 10px;
 }
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}  
+.sendme{
+  width:330px;
+}
+
+.app-nav span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.home-background {
+  position: fixed;
+  top: 20%;
+ 
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  background: image-url('profile.jpg') no-repeat;
+  background-size: cover; 
+}
