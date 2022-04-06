@@ -38,8 +38,8 @@ puts "5 skills created"
     title:"Portfolio Title #{portfolio_item}",
     subtitle: "Ruby On Rails",
     body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    main_image: "http://placehold.it/600x400",
-    thunmb_image: "http://placehold.it/300x200"
+    main_image: "https://place-hold.it/600x400",
+    thunmb_image: "https://place-hold.it/350x200"
   )
 end
 
@@ -48,8 +48,8 @@ end
     title:"Portfolio Title #{portfolio_item}",
     subtitle: "Angular",
     body: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    main_image: "http://placehold.it/600x400",
-    thunmb_image: "http://placehold.it/350x200"
+    main_image: "https://place-hold.it/600x400",
+    thunmb_image: "https://place-hold.it/350x200"
   )
 end
 
