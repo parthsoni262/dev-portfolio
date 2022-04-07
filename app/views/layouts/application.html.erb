@@ -14,8 +14,15 @@
   <body>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-      <div id="background">
-        <%#= image_tag "home_bg.png", width: 300, alt: "profile image" %>
+      <div class="">
+        <%= video_tag(
+           'f1.mp4',
+           id: 'background',
+           :autoplay => true, 
+           :loop => true,
+           :muted => true,
+           class: "home_video"
+          )%>
       </div>
       <%= render "shared/application_nav" %>
 
