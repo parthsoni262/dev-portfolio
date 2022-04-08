@@ -1,4 +1,5 @@
-alert("Hello");
+console.log("Hello");
+
 /*
  * HTML5Sortable package
  * https://github.com/lukasoppermann/html5sortable

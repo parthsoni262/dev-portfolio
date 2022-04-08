@@ -94,3 +94,5 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 6.0'
 
 gem 'turbolinks', '~> 5.2', '>= 5.2.1'
+
+gem 'jquery-turbolinks', '~> 2.1'
